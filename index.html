@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Frontend Mentor | News homepage</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <section>
+      <nav
+        class="flex justify-between h-[8vh] px-5 lg:py-10 lg:px-10 lg:w-full"
+      >
+        <div>
+          <h1 class="text-3xl text-black font-bold font-serif">W.</h1>
+        </div>
+        <div
+          class="toggle-bar absolute -top-full right-0 bg-white w-[70%] h-[85vh] py-36 lg:static lg:bg-white lg:w-[50vw] lg:h-0 lg:py-0"
+        >
+          <ul
+            class="text-black flex flex-col gap-5 px-5 text-xl lg:text-black lg:flex-row lg:justify-between lg:gap-2"
+          >
+            <li class="cursor-pointer hover:text-pink-400">Home</li>
+            <li class="cursor-pointer hover:text-pink-400">New</li>
+            <li class="cursor-pointer hover:text-pink-400">Popular</li>
+            <li class="cursor-pointer hover:text-pink-400">Trending</li>
+            <li class="cursor-pointer hover:text-pink-400">Categories</li>
+          </ul>
+        </div>
+        <div class="lg:hidden">
+          <svg
+            class="menu mt-3 cursor-pointer relative"
+            width="40"
+            height="17"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g fill="#00001A" fill-rule="evenodd">
+              <path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z" />
+              <path d="M0 0h40v3H0z" />
+            </g>
+          </svg>
+
+          <svg
+            class="menu-2 mt-3 cursor-pointer hidden relative"
+            width="32"
+            height="31"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g fill="#00001A" fill-rule="evenodd">
+              <path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z" />
+              <path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z" />
+            </g>
+          </svg>
+        </div>
+      </nav>
+      <!-- second section -->
+      <main class="px-5 lg:px-10">
+        <div class="lg:flex lg:justify-between lg:gap-11 lg:mt-8">
+          <div class="lg:w-[65vw]">
+            <div>
+              <img
+                class=""
+                src="./assets/images/image-web-3-desktop.jpg"
+                alt=""
+              />
+            </div>
+            <div class="lg:flex lg:gap-6">
+              <div>
+                <h1 class="text-5xl font-bold pt-4">
+                  The Bright Future of Web 3.0?
+                </h1>
+              </div>
+              <div class="lg:w-[40vw]">
+                <p class="text-[18px] text-gray-600 py-5">
+                  We dive into the next evolution of the web that claims to put
+                  the power of the platforms back into the hands of the people.
+                  But is it really fulfilling its promise?
+                </p>
+                <button
+                  class="bg-red-500 text-white px-5 py-2 tracking-[.2rem] mb-20 lg:mb-0"
+                >
+                  READ MORE
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Main image -->
+
+          <div class="bg-blue-950 px-5 text-white">
+            <div>
+              <h1 class="text-3xl text-orange-400 py-6 font-bold">New</h1>
+            </div>
+            <div>
+              <h1 class="font-bold text-2xl">Hydrogen VS Electric Cars</h1>
+              <p class="text-[18px] text-gray-400 pt-2 pb-7">
+                Will hydrogen-fueled cars ever catch up to EVs?
+              </p>
+            </div>
+            <hr class="bg-gray-400 border-1" />
+            <div class="py-8">
+              <h1 class="font-bold text-2xl">The Downsides of AI Artistry</h1>
+              <p class="text-[18px] text-gray-400 pt-2 pb-7">
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
+            </div>
+            <hr />
+            <div class="pt-8">
+              <h1 class="font-bold text-2xl">Is VC Funding Drying Up?</h1>
+              <p class="text-[18px] text-gray-400 pt-2 pb-7">
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- last section -->
+        <div class="mt-16 lg:flex lg:gap-5 lg:items-center">
+          <div class="flex gap-5">
+            <img
+              class="w-[100px] lg:h-[150px] lg:w-[150px]"
+              src="/assets/images/image-retro-pcs.jpg"
+              alt=""
+            />
+            <div>
+              <h1 class="text-gray-300 text-4xl font-bold mb-3">01</h1>
+              <h1 class="font-bold text-2xl mb-2">Reviving Retro Pcs</h1>
+              <p class="text-gray-500">
+                What happens when old PCs are given modern upgrades?
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-5 my-10">
+            <img
+              class="w-[100px] lg:h-[150px] lg:w-[150px]"
+              src="/assets/images/image-top-laptops.jpg"
+              alt=""
+            />
+            <div>
+              <h1 class="text-gray-300 text-4xl font-bold mb-3">02</h1>
+              <h1 class="font-bold text-2xl mb-2">Top 10 Laptops of 2022</h1>
+              <p class="text-gray-500">
+                Our best picks for various needs and budgets.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-5">
+            <img
+              class="w-[100px] lg:h-[150px] lg:w-[150px]"
+              src="/assets/images/image-gaming-growth.jpg"
+              alt=""
+            />
+            <div>
+              <h1 class="text-gray-300 text-4xl font-bold mb-3">03</h1>
+              <h1 class="font-bold text-2xl mb-2">The Growth of Gaming</h1>
+              <p class="text-gray-500">
+                How the pandemic has sparked fresh opportunities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <div class="attribution mt-32 items-center content-center text-center">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">AKASH</a>.
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
